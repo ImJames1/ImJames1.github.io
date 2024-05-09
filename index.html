@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James's Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <header class="d-flex justify-content-center py-3 border-bottom navbar-fixed-top">
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="#Home" class="nav-link" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="#About" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#Projects" class="nav-link">Projects</a></li>
+      </ul>
+    </header>
+ 
+   
+        <div class="hero-container  border-bottom">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+              <div class="col-10 col-sm-8 col-lg-6">
+                <img src="intro-photo.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="400" height="400" loading="lazy">
+              </div>
+              <div class="col-lg-6">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Hello, I'm James,</h1>
+                <h1 class="display-5 fw-bold text-primary">a software developer</h1>
+                <p class="lead"></p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                  <!-- <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+                  <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <div class="about-container border-bottom mt-3" id="About">
+            <h1 class="headings">About Me</h1>
+            <p class="about-body">I am a software developer based in Southern California. I graduated from the University of California, Irvine
+                with a B.S. in Computer Science and I plan to get my master's degree in Graphic Information Technology this Fall. I am proficient in 
+                programming languages such as Python, Java, JavaScript, SQL, Java, C, and C++. Also, I am exploring front-end development and recently 
+                received a certification in web development. Web development has always been an unexplored passion of mine and I am so excited to 
+                jump into this new world!
+            </p>
+            
+        </div>
+
+        <div class="project-container mt-3" id="Projects">
+            <h1 class="headings">Projects</h1>
+            <div class="row">
+                <div class="col-sm-4 mb-3 mb-sm-0">
+                  <div class="card h-100">
+                    <!-- <img src="" class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                      <h5 class="card-title">Concurrency in 141OS</h5>
+                      <p class="card-text">• Developed an operating system in Java that allows users to create files, store copies of files on 2 simulated disks, and print copies of files to 3 simulated printers <br>
+                        • Employed threads and concurrency primitives to ensure users are guaranteed exclusive rights to disks and printers, the content of each file is stored and printed correctly, and users’ commands execute as intended while maintaining system responsiveness </p>
+                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 mb-3 mb-sm-0">
+                  <div class="card h-100">
+                    <!-- <img src="" class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                      <h5 class="card-title">Implementing K-Means</h5>
+                      <p class="card-text">• Developed a k-means algorithm in Python that clusters data from the first two features in the Iris dataset from sklearn <br>
+                        • Wrote a class that initializes an arbitrary amount of data points as centroids using the kmeans++ and random strategies, compute the cluster assignment for each data point, and update each centroid and cluster assignment until convergence 
+                        </p>
+                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 mb-3 mb-sm-0">
+                    <div class="card h-100">
+                      <!-- <img src="" class="card-img-top" alt="..."> -->
+                      <div class="card-body">
+                        <h5 class="card-title">Alarm Clock</h5>
+                        <p class="card-text">•	Created a visual interface in C that permits a user to set a time for an alarm to play a song until the user presses stop, and also display the time in four different time zones <br>
+                            •	Developed the alarm from scratch using a breadboard, LCD, speaker, microcontroller, keypad, soldering iron/wire, resistors. The alarm was run by low-level real-time code written in C targeted at a specific microcontroller
+                            </p>
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                      </div>
+                    </div>
+                  </div>
+              </div>
+        </div>
+
+
+    
+    
+  </div>
+            
+
+    
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

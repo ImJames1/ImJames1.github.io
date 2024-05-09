@@ -1,0 +1,19 @@
+body {
+    margin-bottom: 70px;
+}
+
+.headings {
+    text-align: center;
+}
+
+.nav-item {
+    font-size: 20px;
+}
+
+.about-body {
+    font-size: large;
+}
+
+.card-text {
+    font-size: 17px;
+}
