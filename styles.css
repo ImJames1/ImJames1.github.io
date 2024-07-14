@@ -10,6 +10,10 @@ body {
     font-size: 20px;
 }
 
+.nav-item:hover{
+    background-color: aliceblue;
+}
+
 .about-body {
     font-size: large;
 }
@@ -17,3 +21,4 @@ body {
 .card-text {
     font-size: 17px;
 }
+
