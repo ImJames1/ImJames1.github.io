@@ -18,5 +18,11 @@ body {
     font-size: 17px;
 };
 
+.card-img,
+.card-img-top,
+.card-img-bottom {
+    height: 180px;
+    width: 100%;
+}
 
 
