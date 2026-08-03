@@ -3,207 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>James's Website</title>
+    <title>James | UI/UX Designer & Front-End Developer</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body id="Home">
 
   <div class="container">
-    <header class="d-flex justify-content-center py-3 border-bottom navbar-fixed-top">
+    <!-- Fixed Navigation Header -->
+    <header class="d-flex justify-content-center py-3 border-bottom sticky-top bg-white">
       <ul class="nav nav-pills">
-        <li class="nav-item"><a href="#Home" class="nav-link" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="#Home" class="nav-link active" aria-current="page">Home</a></li>
         <li class="nav-item"><a href="#About" class="nav-link">About</a></li>
         <li class="nav-item"><a href="#Projects" class="nav-link">Projects</a></li>
       </ul>
     </header>
- 
-   
-        <div class="hero-container  border-bottom">
-            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-              <div class="col-10 col-sm-8 col-lg-6">
-                <img src="images/image 6.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="400" height="400" loading="lazy">
-              </div>
-              <div class="col-lg-6">
-                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Hello, I'm James,</h1>
-                <h1 class="display-5 fw-bold text-primary">a UI/UX Front-End Developer</h1>
-                <p class="lead"></p>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                  <!-- <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-                  <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button> -->
-                </div>
+
+    <!-- Hero Section -->
+    <section class="hero-container border-bottom py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-4">
+        <div class="col-10 col-sm-8 col-lg-6 mx-auto">
+          <img src="images/image 6.png" class="d-block mx-lg-auto img-fluid rounded-3 shadow-sm" alt="James Portfolio Visual" width="400" height="400" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-2">Hello, I'm James,</h1>
+          <h2 class="display-6 fw-bold text-primary mb-3">a UI/UX Front-End Developer</h2>
+          <p class="lead text-muted mb-4">Designing intuitive digital experiences and bringing them to life with clean, responsive code.</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <a href="#Projects" class="btn btn-primary btn-lg px-4 me-md-2">View Projects</a>
+            <a href="#About" class="btn btn-outline-secondary btn-lg px-4">About Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-container border-bottom py-5" id="About">
+      <h2 class="headings fw-bold mb-4">About Me</h2>
+      <p class="about-body fs-5 text-secondary leading-relaxed">
+        Hi, I’m James! I’m a SoCal-based designer and front-end developer who loves building thoughtful, seamless digital products.<br><br>
+        With a background in Computer Science (BS from UC Irvine) and advanced training in visual technology (MS in Graphic Information Technology from ASU), I tackle design challenges with both a creative eye and a developer's mindset. My toolkit spans everything from Figma and Adobe Creative Cloud to responsive HTML5/CSS3, JavaScript, and WordPress.<br><br>
+        Currently, I’m crafting web experiences as the <strong>Lead Web Designer for Grimorium</strong>.<br><br>
+        Off the clock, I’m a big fan of all things pop culture—usually rewatching Marvel movies, reading fantasy novels, or attending live concerts.
+      </p>      
+    </section>
+
+    <!-- Projects Section -->
+    <section class="project-container py-5" id="Projects">
+      <h2 class="headings fw-bold mb-4">Featured Projects</h2>
+      <div class="row g-4">
+        
+        <!-- Grimorium Card -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="images/Grimorium Homepage Screenshot.png" class="card-img-top portfolio-img" alt="Screenshot of Grimorium Home Page">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5 fw-bold text-dark mb-3">Grimorium</h3>
+              <ul class="card-text small text-muted ps-3 mb-4">
+                <li>Led design, development, and ongoing maintenance of multiple pages on a live fantasy web platform.</li>
+                <li>Configured user authentication, registration flows, and role-based conditional content visibility.</li>
+                <li>Constructed a reusable spell card template establishing a scalable visual system for 300+ pages.</li>
+                <li>Diagnosed and resolved site issues, restoring broken pages and improving performance.</li>
+              </ul>
+              <div class="mt-auto">
+                <a href="https://grimorium.org/" target="_blank" rel="noopener" class="btn btn-primary btn-sm w-100">Visit Live Site</a>
               </div>
             </div>
           </div>
-
-        <div class="about-container border-bottom mt-3" id="About">
-            <h1 class="headings">About Me</h1>
-            <p class="about-body">Hi, I’m James! I’m a SoCal-based designer and front-end developer who loves building thoughtful, seamless digital products. <br>
-With a background in Computer Science (BS from UC Irvine) and advanced training in visual technology (MS in Graphic Information Technology from ASU), I tackle design challenges with both a creative eye and a developer's mindset. My toolkit spans everything from Figma and Adobe Creative Cloud to responsive HTML5/CSS3, JavaScript, and WordPress. <br>
-Currently, I’m crafting a web experience as the Lead Web Designer for Grimorium. <br>
-Off the clock, I’m a big fan of all things pop culture like Marvel movies, Harry Potter and Hunger Games novels, and attending concerts.
-            </p>     
         </div>
 
-        <div class="project-container mt-3" id="Projects">
-            <h1 class="headings">Projects</h1>
-            <div class="row">
-                
-                <div class="col-sm-4 mb-3 mb-sm-0">
-                    <div class="card h-100">
-                      <img src="images/Grimorium Homepage Screenshot.png" height="200px" class="card-img-top" alt="Screenshot of Grimorium Home Page">
-                      <div class="card-body">
-                        <h5 class="card-title"><a href="https://grimorium.org/">Grimorium</a></h5>
-                        <p class="card-text">● Led the design, development, and ongoing maintenance of multiple pages on a live fantasy web platform, creating new features and improving site functionality and user experience  <br>
-                            ● Configured robust user authentication, registration flows, and conditional content visibility based on user roles and account statuses <br>
-                            ● Constructed a reusable spell card template that established a scalable visual system for 300+ website pages, improving consistency and streamlining future content creation <br>
-                            ● Identified, diagnosed, and resolved website issues, restoring broken pages and improving overall site reliability and performance
-                            </p>
-                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                      </div>
-                    </div>
+        <!-- Social Media Campaign Card -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="images/Screenshot of Social Media Campaign.png" class="card-img-top portfolio-img" alt="Screenshot of Social Media Campaign">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5 fw-bold text-dark mb-3">Wolverine Social Media Campaign</h3>
+              <ul class="card-text small text-muted ps-3 mb-4">
+                <li>Conceptualized and designed a promotional campaign across YouTube, Instagram, Facebook, and X.</li>
+                <li>Created branded thumbnails, social posts, and mobile mockups that reinforced brand recognition.</li>
+                <li>Utilized visual hierarchy, typography, and composition to maintain cross-platform consistency.</li>
+              </ul>
+              <div class="mt-auto">
+                <a href="https://drive.google.com/file/d/1vHH5gqT-Gqq33EdBXyCo_ksRQGYqi641/view?usp=drive_link" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm w-100">View Campaign Deck</a>
               </div>
-
-                <div class="col-sm-4 mb-3 mb-sm-0">
-                    <div class="card h-100">
-                      <img src="images/Screenshot of Social Media Campaign.png" height="200px" class="card-img-top" alt="Screenshot of Social Media Campaign">
-                      <div class="card-body">
-                        <h5 class="card-title"><a href="https://drive.google.com/file/d/1vHH5gqT-Gqq33EdBXyCo_ksRQGYqi641/view?usp=drive_link">Social Media Campaign for Wolverine</a></h5>
-                        <p class="card-text">● Conceptualized and designed a promotional campaign for Marvel's Wolverine, producing branded assets across YouTube, Instagram, Facebook, and X <br>
-                            ● Created engaging promotional materials—including thumbnails, social posts, and mobile mockups—that reinforced brand recognition across digital channels <br>
-                            ● Utilized visual hierarchy, typography, and composition to maximize engagement and maintain brand consistency across digital platforms
-                            </p>
-                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                      </div>
-                    </div>
-              </div>
-                
-                <div class="col-sm-4 mb-3 mb-sm-0">
-                  <div class="card h-100">
-                    <img src="images/Screenshot 2025-12-27 224828.png" height="200px" class="card-img-top" alt="Screenshot of Barnes & Noble mockup website">
-                    <div class="card-body">
-                      <h5 class="card-title"><a href="https://imjames1.github.io/barnes_and_noble/">Barnes and Noble Mockup Website</a></h5>
-                      <p class="card-text"> ● Built a fully responsive multi-page website using semantic HTML5 and modular CSS, improving usability across desktop and mobile breakpoints  <br>
-                        ● Implemented JavaScript-driven interactivity (navigation, UI feedback) to enhance user engagement and task flow <br>
-                        ● Translated wireframes from Figma into production-ready UI components, reducing design-to-development gaps
-            
-                      </p>
-                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="col-sm-4 mb-3 mb-sm-0">
-                <div class="card h-100">
-                  <img src="images/Screenshot 2025-12-27 233027.png" height="200px" class="card-img-top" alt="Screenshot of Mood Venue Interactive Prototype">
-                  <div class="card-body">
-                    <h5 class="card-title"><a href="  https://www.figma.com/proto/4aSeitUuyPY2ZUFgYvN2O1/GIT-520-Assignment-6?node-id=92-600&t=rJKezc4MYEOYmh7d-1&starting-point-node-id=92%3A600">Mood Venue Interactive Prototype</a></h5>
-                    <p class="card-text">● Created wireframes in Figma and translated designs into a functional website using HTML5, CSS, and JavaScript  <br>
-                        ● Applied user research insights and usability principles to guide layout, navigation, and interaction decisions <br>
-                        ● Leveraged advanced Figma features to streamline feedback from stakeholders
-                        </p>
-                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                  </div>
-                </div>
-              </div>
-                
-                <div class="col-sm-4 mb-3 mb-sm-0">
-                    <div class="card h-100">
-                      <img src="images/Screenshot 2026-01-22 170930.png" height="200px" class="card-img-top" alt="Screenshot of Circle Weaver Prototype">
-                      <div class="card-body">
-                        <h5 class="card-title"><a href="https://www.figma.com/proto/gShRI75s0m2WTyXwav2OFx/Circle-Weaver-Prototype?t=hUTNcHiOH38pfVfe-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&node-id=1-864">Circle Weaver Prototype</a></h5>
-                        <p class="card-text">● Collaborated with a team to create an interactive, high-fidelity prototype in Figma to improve Circle Weaver's usability and accessibility scores <br>
-                            ● Conducted heuristic evaluations, accessibility audits, user research, and usability tests to discover and solve problems with the current site
-                            </p>
-                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                      </div>
-                    </div>
-                  </div>
-                
-                  <div class="col-sm-4 mb-3 mb-sm-0">
-                  <div class="card h-100">
-                    <img src="images/Screenshot 2025-12-27 231656.png" height="200px" class="card-img-top" alt="Screenshot of Oogie Boogie mockup poster">
-                    <div class="card-body">
-                      <h5 class="card-title"><a href="https://drive.google.com/file/d/1SsVEQyAN2Lr8KPIZMpPn_mWuD7BrwEj7/view?usp=drive_link">Oogie Boogie Bash Poster</a></h5>                                                             
-                      <p class="card-text">● Created a visually structured promotional layout emphasizing hierarchy, spacing, and readability <br>
-                        ● Applied typography and branding principles relevant to UI consistency and frontend styling <br>
-                        ● Demonstrated attention to visual detail transferable to CSS layout and UI polish
-                        </p>
-                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                    </div>
-                  </div>
-                </div>
-                
-              
-                  <div class="col-sm-4 mb-3 mb-sm-0">
-                  <div class="card h-100">
-                      <img src="images/Screenshot 2025-12-27 234707.png" height="200px" class="card-img-top" alt="Screenshot of Malcolm X typography portrait">
-                    <div class="card-body">
-                    <h5 class="card-title"><a href="https://drive.google.com/file/d/1BVUHbbD9Vf8VHD7rJHprT189kGQv0hy-/view?usp=drive_link">Malcolm X Typography Portrait</a></h5>
-                      <p class="card-text">● Employed the Pen Tool, the Type Tool, tonal zones, and a grayscale gradient in Adobe Illustrator to create a typographic portrait of Malcolm X  <br>
-                        ●	Utilized a reference image and the Pen Tool to construct an outline of Malcolm X’s primary facial features. <br>
-                        ●	Divided the composition into tonal zones and employed the Type Tool to fill in each zone with words from “The Ballot or the Bullet” <br>
-                        </p>
-                    </div>
-                  </div>
-                </div>         
-
-                 <div class="col-sm-4 mb-3 mb-sm-0">
-                  <div class="card h-100">
-                    <img src="images/Screenshot 2025-12-27 232059.png" height="200px"class="card-img-top" alt="Screenshot of Edgar Degas magazine">
-                    <div class="card-body">
-                    <h5 class="card-title"><a href="https://drive.google.com/file/d/1y8oERJBwdyNknUELCSrHZCjOeraLxo0G/view?usp=drive_link">Edgar Degas Magazine</a></h5>
-                      <p class="card-text">● Worked with spreads, grids, images, and my personal academic article in Adobe InDesign to create a magazine revolving around Edgar Degas  <br>
-                        ●	Used Adobe Illustrator to develop a logo and multiple ballerinas that adhere to the magazine and Degas’ aesthetics <br>
-                        </p>
-                    </div>
-                  </div>
-                </div>   
-                    </div>
+            </div>
+          </div>
         </div>
 
+        <!-- Barnes & Noble Card -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="images/Screenshot 2025-12-27 224828.png" class="card-img-top portfolio-img" alt="Screenshot of Barnes & Noble mockup website">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5 fw-bold text-dark mb-3">Barnes & Noble Web Mockup</h3>
+              <ul class="card-text small text-muted ps-3 mb-4">
+                <li>Built a fully responsive multi-page website using semantic HTML5 and modular CSS.</li>
+                <li>Implemented JavaScript-driven interactivity (navigation, UI feedback) to enhance task flow.</li>
+                <li>Translated wireframes from Figma into production-ready UI components.</li>
+              </ul>
+              <div class="mt-auto">
+                <a href="https://imjames1.github.io/barnes_and_noble/" target="_blank" rel="noopener" class="btn btn-primary btn-sm w-100">View Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    
-    
-            
+        <!-- Mood Venue Card -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="images/Screenshot 2025-12-27 233027.png" class="card-img-top portfolio-img" alt="Screenshot of Mood Venue Interactive Prototype">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5 fw-bold text-dark mb-3">Mood Venue Interactive Prototype</h3>
+              <ul class="card-text small text-muted ps-3 mb-4">
+                <li>Created wireframes in Figma and translated designs into a functional website using HTML5, CSS, and JS.</li>
+                <li>Applied user research insights and usability principles to guide layout and navigation.</li>
+                <li>Leveraged advanced Figma prototyping features to streamline stakeholder feedback.</li>
+              </ul>
+              <div class="mt-auto">
+                <a href="https://www.figma.com/proto/4aSeitUuyPY2ZUFgYvN2O1/GIT-520-Assignment-6?node-id=92-600&t=rJKezc4MYEOYmh7d-1&starting-point-node-id=92%3A600" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm w-100">Launch Figma Prototype</a>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    
+        <!-- Circle Weaver Card -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="images/Screenshot 2026-01-22 170930.png" class="card-img-top portfolio-img" alt="Screenshot of Circle Weaver Prototype">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5 fw-bold text-dark mb-3">Circle Weaver Prototype</h3>
+              <ul class="card-text small text-muted ps-3 mb-4">
+                <li>Collaborated with a team to build an interactive, high-fidelity prototype in Figma.</li>
+                <li>Conducted heuristic evaluations, accessibility audits, and usability tests to improve UX scores.</li>
+              </ul>
+              <div class="mt-auto">
+                <a href="https://www.figma.com/proto/gShRI75s0m2WTyXwav2OFx/Circle-Weaver-Prototype?t=hUTNcHiOH38pfVfe-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&node-id=1-864" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm w-100">Launch Figma Prototype</a>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <!-- Oogie Boogie Card -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="images/Screenshot 2025-12-27 231656.png" class="card-img-top portfolio-img" alt="Screenshot of Oogie Boogie mockup poster">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5 fw-bold text-dark mb-3">Oogie Boogie Bash Poster</h3>
+              <ul class="card-text small text-muted ps-3 mb-4">
+                <li>Designed a structured promotional layout emphasizing visual hierarchy, spacing, and readability.</li>
+                <li>Applied typography and branding principles relevant to UI consistency and front-end styling.</li>
+              </ul>
+              <div class="mt-auto">
+                <a href="https://drive.google.com/file/d/1SsVEQyAN2Lr8KPIZMpPn_mWuD7BrwEj7/view?usp=drive_link" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm w-100">View Poster Asset</a>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <!-- Malcolm X Typography Card -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="images/Screenshot 2025-12-27 234707.png" class="card-img-top portfolio-img" alt="Screenshot of Malcolm X typography portrait">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5 fw-bold text-dark mb-3">Malcolm X Typography Portrait</h3>
+              <ul class="card-text small text-muted ps-3 mb-4">
+                <li>Employed Pen Tool, Type Tool, and tonal grayscale zones in Adobe Illustrator for vector creation.</li>
+                <li>Divided composition into tonal zones filled with excerpted text from “The Ballot or the Bullet”.</li>
+              </ul>
+              <div class="mt-auto">
+                <a href="https://drive.google.com/file/d/1BVUHbbD9Vf8VHD7rJHprT189kGQv0hy-/view?usp=drive_link" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm w-100">View Illustration</a>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <!-- Edgar Degas Magazine Card -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="images/Screenshot 2025-12-27 232059.png" class="card-img-top portfolio-img" alt="Screenshot of Edgar Degas magazine">
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5 fw-bold text-dark mb-3">Edgar Degas Magazine Layout</h3>
+              <ul class="card-text small text-muted ps-3 mb-4">
+                <li>Designed editorial spreads, grid layouts, and typography systems in Adobe InDesign.</li>
+                <li>Created custom vector logos and ballerina illustrations in Illustrator matching Degas' aesthetic.</li>
+              </ul>
+              <div class="mt-auto">
+                <a href="https://drive.google.com/file/d/1y8oERJBwdyNknUELCSrHZCjOeraLxo0G/view?usp=drive_link" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm w-100">View Magazine Spread</a>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      </div>
+    </section>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
